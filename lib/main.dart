@@ -90,8 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
       //secondary diagonal check
       if (secondaryDiagonal) {
         if (_colors[i * 3 + 3 - i - 1] != Colors.white) {
-          if (i != 0 &&
-              _colors[i * 3 + 3 - i - 1] != _colors[(i - 1) * 3 + 3 - i]) {
+          if (i != 0 && _colors[i * 3 + 3 - i - 1] != _colors[(i - 1) * 3 + 3 - i]) {
             secondaryDiagonal = false;
             nrFailures++;
           }
@@ -177,8 +176,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             } else {
                               _colors[index] = Colors.red;
                             }
-                            if (!_colors.any((Color element) =>
-                                    element == Colors.white) ||
+                            if (!_colors.any((Color element) => element == Colors.white) ||
                                 (_taps > 4 && _existWinner())) {
                               _restartIsVisible = true;
                             }
