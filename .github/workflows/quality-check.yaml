@@ -16,4 +16,4 @@ jobs:
         run: flutter format --line-length 120 --set-exit-if-changed ./lib
 
       - name: Analyze code
-        run: flutter analyze
+        run: flutter analyze ./lib
