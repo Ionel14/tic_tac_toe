@@ -76,6 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
       //primary diagonal check
       if (primaryDiagonal) {
+
         if (_colors[i + i * 3] != Colors.white) {
           if (i != 0 && _colors[i + i * 3] != _colors[i - 1 + (i - 1) * 3]) {
             primaryDiagonal = false;
